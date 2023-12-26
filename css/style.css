@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    user-select: none;
+    height: fit-content;
+    position: relative;
+   
+  }
+  
+  /* side scroll bar style*/
+  
+  body::-webkit-scrollbar {
+    width: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(85, 79, 79);
+    border-radius: 3px;
+  }
+
+.header {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* header tag contains 3 type of sections  */
+  
+  /**/
+  /*header bar  contain 3 stage */
+  
+  .header-bar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .social-bar {
+    width: 150px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  
+  .center-bar {
+    width: 60%;
+    font-weight: 500;
+    height: 90%;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(105, 100, 100);
+  }
+  
+  .lang-bar {
+    width: 20%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-bar span {
+    height: 28px;
+    width: 28px;
+    background-color: #d6d6d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .social-bar span:hover {
+    background-color: darkorange;
+  }
+  
+  .social-bar span:hover > i {
+    font-size: 20px;
+    color: black;
+  }
+  
+  select,
+  option {
+    border: #d6d6d6;
+    border-radius: 10px;
+  }
+  
+  .lang-bar #lang {
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  
+  /*end of the header-bar*/
+  
+  /* logo-bar start it contain 
+         3 stage logo search and other cart icons */
+  
+  .logo-bar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 90%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .search {
+    height: 90%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .order {
+    width: 20%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+  }
+  .order a{
+    text-decoration: none;
+    color: black;
+  }
+  .logo img {
+    width: auto;
+    height: 30%;
+  }
+  
+  .search input {
+    width: 90%;
+    height: 40%;
+    border-radius: 10px;
+    border: 2px solid grey;
+    padding-left: 30px;
+    font-size: 16px;
+  }
+  
+  .search i {
+    position: absolute;
+    font-size: 25px;
+    color: rgb(94, 90, 90);
+    right: 8%;
+  }
+  
+  .order span {
+    font-size: 30px;
+  }
+  
+  /* end of logo-bar*/
+  
+  /* nav-bar start from here*/
+  
+  .nav-bar {
+    width: 100%;
+    height: 60px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    margin-bottom: 10px;
+    overflow: auto;
+  }
+  
+  .nav-bar a {
+    color: black;
+    display: inline-flex;
+    min-height: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 5px 0 5px;
+    transition: 0.1s;
+  }
+  
+  .nav-box {
+    height: 300px;
+    padding: 10px;
+    min-width: 200px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    visibility: hidden;
+    z-index: 6;
+    position: absolute;
+    margin-top: 35px;
+    border-radius: 10px;
+  }
+  .nav-box-1 {
+    width: 100%;
+    height: 300px;
+    left: 0;
+  }
+  
+  .nav-bar a:hover > .nav-box {
+    visibility: visible;
+  }
+  
+  .nav-bar a:active > .nav-box {
+    visibility: visible;
+  }
+  
+  .nav-bar::-webkit-scrollbar {
+    background-color: white;
+    height: 10px;
+  }
+  .nav-bar::-webkit-scrollbar-thumb {
+    background-color: gainsboro;
+    border-radius: 3px;
+  }
+  
+  .nav-bar a:hover {
+    color: orangered;
+    border-bottom: 4px solid orangered;
+  }
+  .container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .img-con{
+    width: 100%;
+    height: 60%;
+  }
+  
+.text-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    padding: 1em;
+  
+  }
+  
+  .text-bar h2 {
+    font-size: 1em;
+    font-weight: 500;
+    color: orangered;
+  }
+  
+  .text-bar h1 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 80%;
+  }
+  
+  .text-bar p {
+    font-size: 1rem;
+    margin-top: 20px;
+    text-transform: capitalize;
+  }
+  
+  .text-bar button {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin-top: 30px;
+    background-color: orangered;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+
+  @media only screen and (max-width: 1200px) {
+    
+  }
+  @media only screen and (max-width: 768px) {
+    body{
+        .social-bar {
+            display: none;
+          }
+          .center-bar {
+            width: 60%;
+            padding-left: 20px;
+            justify-content: flex-start;
+          }
+          .lang-bar {
+            width: 40%;
+            justify-content: flex-end;
+            padding-right: 30px;
+          }
+      
+          .logo {
+            justify-content: flex-start;
+            padding-left: 30px;
+            width: 40%;
+          }
+          .order {
+            display: none;
+          }
+          .search {
+            width: 60%;
+          }
+    }
+
+  }
+  @media only screen and (max-width: 350px) {
+ 
+  
+  }
+  
+  
