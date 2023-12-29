@@ -88,6 +88,7 @@ span { display: inline-block; }
 html {
   font-family: "Poppins", sans-serif;
   overscroll-behavior: contain;
+  user-select: none;
 }
 
 input {
